@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="list.css">
+
+</head>
+
+<body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="list.js"></script>
+    <div class="container">
+        <h3>User List</h3>
+        <div class="user_form">
+            <label for="name">name</label>
+            <input type="text" value="" id="name" autocomplete="off">
+            <label for="age">age</label>
+            <input type="text" value="" id="age" required>
+        </div>
+        <div class="btn_group">
+            <button onclick="getList()">get list</button>
+            <button onClick="updateList()">add user</button>
+            <button onclick="deleteList()">clear list</button>
+        </div>
+        <p class="message">
+            hello world
+        </p>
+        <ul id="user_list">
+        </ul>
+    
+    </div>
+
+
+
+</body>
+
+</html>
